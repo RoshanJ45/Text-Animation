@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(171, 184, 195);
+        }
+        pre {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            margin: 1rem 0 0 1rem;
+            width: fit-content;
+            padding: 2rem;
+            background-color: #151718;
+            color: #e6cd69;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        code {
+            font-family: "IBM Plex Mono", monospace;
+            font-weight: 400;
+        }
+        pre {} i, b, u, em, strong {
+            text-decoration: none;
+            font-weight: 400;
+            font-style: normal;
+            color: #55b5db;
+        }
+        em {
+            color: #a074c4;
+        }
+        strong {
+            color: #9fca56;
+        }
+        u {
+            color: #eeeeee;
+        }
+        s {
+            color: #666666;
+            text-decoration: none;
+        }
+        .lineOfCode {
+            animation: typingEffect 1800ms steps(14, end) forwards 1000ms, caretAnim 500ms steps(2, end) 0s infinite;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            width: 0;
+            height: auto;
+            border-right: 2px solid #ffffff;
+        }
+        .lineOfCode:nth-of-type(2) {
+            height: 0;
+            animation-delay: 3100ms;
+        }
+        .lineOfCode:nth-of-type(3) {
+            height: 0;
+            animation-delay: 5200ms;
+        }
+        @keyframes typingEffect {
+            0% {
+                border-width: 2px;
+            }
+            5% {
+                width: 0;
+                height: auto;
+                border-width: 2px;
+            }
+            93% {
+                border-width: 2px;
+            }
+            100% {
+                width: 14ch;
+                height: auto;
+                border-width: 0;
+            }
+        }
+        @keyframes caretAnim {
+            0% {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #ffffff;
+            }
+            100% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+<pre><code id="codeBlock"><div class="lineOfCode"><em>Welcome</em> to</div><div 
+class="lineOfCode"><strong>Git </strong><b>RoshanJ45</b></div><div class="lineOfCode"><s>// Thank you !</s></div></code></pre>
+</body>
+</html>
